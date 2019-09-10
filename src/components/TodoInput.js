@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 
 export default class TodoInput extends Component {
+  state = {
+    valid: true
+  };
+
   render() {
     const { item, handleChange, handleSubmit, editItem } = this.props;
     return (
@@ -18,6 +22,7 @@ export default class TodoInput extends Component {
               placeholder="add a todo item"
               value={item}
               onChange={handleChange}
+              required
             />
           </div>
           <button
