@@ -4,7 +4,7 @@ export default class TodoInput extends Component {
   state = {
     valid: true
   };
-
+  //todo input component
   render() {
     const { item, handleChange, handleSubmit, editItem } = this.props;
     return (

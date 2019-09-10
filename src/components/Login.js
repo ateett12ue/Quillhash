@@ -7,7 +7,9 @@ export default class Login extends Component {
     pass: "",
     viewTodo: false
   };
+  //login component
   componentDidMount() {
+    localStorage.clear();
     localStorage.setItem("users", JSON.stringify(data.users));
   }
   handleSubmit = e => {

@@ -4,6 +4,7 @@ export default class TodoItem extends Component {
   state = {
     completed: false
   };
+  //todo list
   handleDone = () => {
     this.setState({
       completed: !this.state.completed
