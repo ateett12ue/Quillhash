@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import uuid from "uuid";
 import TodoInput from "./components/TodoInput";
 import TodoList from "./components/TodoList";
+import TodoCompleted from "./components/TodoCompleted";
 function App() {
   return (
     <div className="container">
@@ -12,6 +13,7 @@ function App() {
           <h3 className="text-capitalize text-center">todo input</h3>
           <TodoInput />
           <TodoList />
+          <TodoCompleted />
         </div>
       </div>
     </div>
